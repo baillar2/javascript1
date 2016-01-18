@@ -8,13 +8,16 @@
 //	var phoneNumber = prompt("Please enter your phone number as  555-555-5555","" )
 //}
 
-var birthDate = prompt("enter birth date as xx/xx/xxxx", "")
+//var birthDate = prompt("enter birth date as xx/xx/xxxx", "")
+//
+//if (birthDate.charAt(2)==="/" && birthDate.charAt(5)==="/") {
+//	console.log("Thank you")
+//}
+//else {
+//	console.log("please enter a valid birth date as xx/xx/xxxx")
+//	var birthDate = prompt("enter birth date as xx/xx/xxxx", "")
+//}
 
-if (birthDate.charAt(2)==="/" && birthDate.charAt(5)==="/") {
-	console.log("Thank you")
-}
-else {
-	console.log("please enter a valid birth date as xx/xx/xxxx")
-	var birthDate = prompt("enter birth date as xx/xx/xxxx", "")
-}
+var stateAbr = prompt("please enter your state as 'MI'", "")
 
+if (stateAbr.charAt(0)===)
