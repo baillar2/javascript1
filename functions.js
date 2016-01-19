@@ -78,7 +78,9 @@ var tiny = function(n) {
 
 }
 
-console.log(tiny(.2))
+//console.log(tiny(.2))
+
+
 
 
 
