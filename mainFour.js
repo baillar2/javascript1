@@ -1,10 +1,7 @@
 var victims = []
 var volunteers = []
 
-
-var victimNumber = prompt("How many victims need assistance?")
-
-for ( i=0 ; i<=victimNumber ; i++) {
+ do {
 
 		var vicName = prompt("What is your victims name?")
 		var vicNumber = prompt("what is your victims number?")
@@ -16,13 +13,15 @@ for ( i=0 ; i<=victimNumber ; i++) {
 			street: vicStreet,
 		}
 
-		victims.push(vicObject) 
+		victims.push(vicObject)
 
-	}
+		var i = confirm("Would you like to add a victim?") 
+		}
 
-var volunteers = prompt("How many volunteers do you have?")
+while (i)
 
-for (i=0 ; i<=volunteers ; i++) {
+	
+do {
 
 	var volName = prompt("What is your volunteers name?")
 	var volNumber = prompt("What is your volunteers number?")
@@ -35,5 +34,15 @@ for (i=0 ; i<=volunteers ; i++) {
 	}
 
 	volunteers.push(volObject)
+
+	var j = confirm("Would you like to add a/another Volunteer?")
 }
 
+while (j)
+
+//var needHelp = prompt("Which victim needs help now?")
+
+
+
+console.log(victims)
+console.log(volunteers)
