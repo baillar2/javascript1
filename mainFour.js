@@ -40,7 +40,18 @@ do {
 
 while (j)
 
-//var needHelp = prompt("Which victim needs help now?")
+var needHelp = prompt("Which victim needs help now?")
+
+for (i=0 ; i<=volunteers.length ; i++) {
+
+	if (victims[i].street === volunteers[i].street && needHelp === victims[i].name) {
+		console.log(volunteers[i] + " is on the same street as you and will help.")
+	}
+	else {
+		console.log("There are no volunteer on the same street.")
+	}
+
+}
 
 
 
