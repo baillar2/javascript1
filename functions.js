@@ -80,6 +80,24 @@ var tiny = function(n) {
 
 //console.log(tiny(.2))
 
+var letterCapitalize = function(string){
+	var words = string.split(' ')
+
+	for ( i=0 ; i<words.length ; i++) {
+		var letters = words[i].split('')
+		console.log(letters)
+		letters[0]= letters[0].toUpperCase()
+		console.log(letters)
+		words[i] = letters.join('')
+		console.log(words)
+		}
+
+		string = words.join(' ')
+		return string
+	}
+console.log(letterCapitalize('this is a sentance'))
+	
+
 
 
 
