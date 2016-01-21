@@ -95,9 +95,29 @@ var letterCapitalize = function(string){
 		string = words.join(' ')
 		return string
 	}
-console.log(letterCapitalize('this is a sentance'))
+//console.log(letterCapitalize('this is a sentance'))
 	
 
+var wordCount = function(string) {
+	var words = string.split(' ')
+	var answer = words.length	
+	return answer
+	}	
+	
+	
+var primeTime = function(number) {
+
+	for ( var i=2 ; i<number ; i++) {
+		if (number%i === 0) {
+			return true
+		}
+		else {
+			return false
+
+		}
+	}
+	
+}
 
 
 
