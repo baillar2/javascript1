@@ -120,10 +120,41 @@ var primeTime = function(number) {
 }
 
 
+var animals = ['rat', 'cat', 'butterfly', 'marmot', 'ocelot']
 
+var probmlem1 = function(array) {
 
+	for(var i=0; i<animals.length-1; i++) {
+ 		console.log(animals[i]);
+	}
+}
 
+var problem2 = function(array) {
+	for(var i=0; i<animals.length; i++) {
+ 		if (i%2 == 0 ) {
+ 			console.log(animals[i])
+ 		}
+	}	
+}
 
+var problem3 = function(array) {
+	for(var i=animals.length-1; i>=0; i--) {
+ 		console.log(animals[i]);
+	}
+}
+
+var problem4 = function() {
+	 for(var i=0 ; i<animals.length ; i++) {
+	 	if (i === 0 || i === animals.length-1) {
+	 		console.log(animals[i])
+	 	}
+	 	else {
+	 		console.log(animals[i])
+	 		console.log(animals[i])
+	 	}
+	 }
+
+}
 
 
 
