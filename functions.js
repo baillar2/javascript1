@@ -157,10 +157,32 @@ var problem4 = function() {
 }
 
 
+var getName = function(object) {
+
+	return object.name
+
+}
+
+//console.log(getName({ name: 'Luisa', age: 25 }))
+
+var totalLetters = function(array) {
+	var total = 0
+	for(var i=0 ; i<array.length ; i++) {
+		 total += array[i].length
+		console.log(total)
+	}
+		return total
+
+}
 
 
+var negativeIndex = function(array, n) {
+	var i = array.length+n
+	return array[i]
 
+}
 
+var keyValue = function(key, value)
 
 
 
