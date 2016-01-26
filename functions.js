@@ -182,9 +182,12 @@ var negativeIndex = function(array, n) {
 
 }
 
-var keyValue = function(key, value)
+//var keyValue = function(key, value)
 
-
+var removeM = function(string) {
+	var replace = string.replace("m", "")
+	return replace
+}
 
 
 
