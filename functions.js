@@ -189,8 +189,25 @@ var removeM = function(string) {
 	return replace
 }
 
+var printObject = function(object) {
+	for (var key in object) {
+		console.log(key + ' is ' + object[key])
+	}
+}
+var vowelList = ['a', 'e', 'i', 'o', 'u']
 
-
+var vowels = function(string) {
+	var array = string.split('')
+	var output = array.filter(function(element){
+		for (var j=0 ; j<vowelList.length ; j++) {
+			if (element === vowelList[j]) {return true}
+							 
+		}
+			 return false
+	}) 
+	
+	return output
+}
 
 
 
