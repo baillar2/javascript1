@@ -209,6 +209,12 @@ var vowels = function(string) {
 	return output
 }
 
+var twins = function(array) {
+	for (var i=0 ; i<array.length ; i+=2) {
+		if (array[i] !== array[i+1]) {return false} 
+		}			
+	return true
+	}
 
 
 
