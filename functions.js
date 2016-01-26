@@ -216,6 +216,12 @@ var twins = function(array) {
 	return true
 	}
 
+var or = function(array) {
+	for (var i=0 ; i<array.length ; i++) {
+		if(array[i] === true) {return true}
+	}
+	return false
+}
 
 
 
