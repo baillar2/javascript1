@@ -226,8 +226,27 @@ var or = function(array) {
 var unique = function(array) {
 	
 }
+var firstReverse = function(string) {
+	var arr = string.split('');
+	var flipped = arr.reverse();
+	var revString = arr.join('');
+	return revString
 
+}
 
+var swapCase = function(string) {
+	var arr = string.split('')
+	for (var i=0 ; i<arr.length ; i++) {
+		if (arr[i] == arr[i].toUpperCase()) {
+			arr[i] = arr[i].toLowerCase()
+		}
+		else if (arr[i] == arr[i].toLowerCase()) {
+			arr[i] = arr[i].toUpperCase()
+		}
+	}
+	var newString = arr.join('')
+	return newString
+}
 
 
 
