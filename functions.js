@@ -248,8 +248,24 @@ var swapCase = function(string) {
 	return newString
 }
 
+var letterCount = function(string) {
+	
+}
 
 
+// OOP //
+
+var Quote = function(author, text){
+		this.author=author || 'anonymous'
+		this.text= text || '...'
+}
+Quote.prototype.quoteLength = function(){
+	return this.text.split(' ').length
+}
+
+var shakespear = new Quote('William', 'hamelet was a shitty play')
+
+var whitman = new Quote('Walt', 'Walden')
 
 
 
