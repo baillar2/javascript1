@@ -267,6 +267,55 @@ var shakespear = new Quote('William', 'hamelet was a shitty play')
 
 var whitman = new Quote('Walt', 'Walden')
 
+var palindrome = function(string){
+	var array = string.split('')
+ 	if (array == array.reverse()) {
+ 		return true
+ 	}
+ 	return false
+}
+
+var dashInstert = function(number){
+	var string = number.toString()
+	var newString = ""
+	for(var i=0 ; i<string.length ; i++){
+		if(string[i]%2 != 0 && string[i+1]%2 != 0) {
+			console.log('triggered')
+			newString += string[i]
+			if(i != string.length-1){
+			newString += '-'
+			}
+		}
+		else {
+			newString += string[i]
+		}
+	}
+	return newString
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
